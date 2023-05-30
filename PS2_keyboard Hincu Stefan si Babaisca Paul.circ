@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="BASYS3"/>
+    <a name="downloadFrequency" val="1.0"/>
+    <a name="simulationFrequency" val="2048000.0"/>
+    <comp lib="0" loc="(1050,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Output_bus_2"/>
+      <a name="output" val="true"/>
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="0" loc="(340,50)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Output_1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(360,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Output_bus_1"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(60,230)" name="Clock"/>
+    <comp loc="(1050,170)" name="SSDISPLAY">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="ssdisplay_1"/>
+    </comp>
+    <comp loc="(330,230)" name="DEVIDER">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="devider_1"/>
+    </comp>
+    <comp loc="(340,50)" name="PS2_RECEIVER">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="ps2_receiver_1"/>
+    </comp>
+    <comp loc="(350,140)" name="RING_REGISTER">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="ring_register_1"/>
+    </comp>
+    <comp loc="(590,170)" name="ENCODER">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="encoder_1"/>
+    </comp>
+    <comp loc="(740,30)" name="KEYBOARD_DECODER">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="keyboard_decoder_1"/>
+    </comp>
+    <comp loc="(920,250)" name="MUX_4_TO_1">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_4_to_1_1"/>
+    </comp>
+    <wire from="(120,140)" to="(120,200)"/>
+    <wire from="(120,140)" to="(130,140)"/>
+    <wire from="(120,200)" to="(360,200)"/>
+    <wire from="(330,230)" to="(360,230)"/>
+    <wire from="(340,70)" to="(500,70)"/>
+    <wire from="(350,140)" to="(360,140)"/>
+    <wire from="(350,160)" to="(370,160)"/>
+    <wire from="(360,200)" to="(360,230)"/>
+    <wire from="(370,160)" to="(370,170)"/>
+    <wire from="(500,30)" to="(500,70)"/>
+    <wire from="(500,30)" to="(520,30)"/>
+    <wire from="(520,30)" to="(530,30)"/>
+    <wire from="(590,170)" to="(680,170)"/>
+    <wire from="(590,190)" to="(590,270)"/>
+    <wire from="(590,270)" to="(700,270)"/>
+    <wire from="(60,230)" to="(110,230)"/>
+    <wire from="(610,180)" to="(610,310)"/>
+    <wire from="(610,180)" to="(780,180)"/>
+    <wire from="(610,310)" to="(700,310)"/>
+    <wire from="(630,160)" to="(630,330)"/>
+    <wire from="(630,160)" to="(760,160)"/>
+    <wire from="(630,330)" to="(700,330)"/>
+    <wire from="(650,140)" to="(650,350)"/>
+    <wire from="(650,140)" to="(740,140)"/>
+    <wire from="(650,350)" to="(700,350)"/>
+    <wire from="(670,200)" to="(670,290)"/>
+    <wire from="(670,200)" to="(800,200)"/>
+    <wire from="(670,290)" to="(700,290)"/>
+    <wire from="(680,170)" to="(680,250)"/>
+    <wire from="(680,250)" to="(700,250)"/>
+    <wire from="(740,30)" to="(800,30)"/>
+    <wire from="(740,50)" to="(780,50)"/>
+    <wire from="(740,70)" to="(760,70)"/>
+    <wire from="(740,90)" to="(740,140)"/>
+    <wire from="(760,70)" to="(760,160)"/>
+    <wire from="(780,50)" to="(780,180)"/>
+    <wire from="(800,30)" to="(800,200)"/>
+    <wire from="(820,170)" to="(820,210)"/>
+    <wire from="(820,170)" to="(830,170)"/>
+    <wire from="(820,210)" to="(930,210)"/>
+    <wire from="(920,250)" to="(930,250)"/>
+    <wire from="(930,210)" to="(930,250)"/>
+  </circuit>
+  <vhdl name="PS2_RECEIVER">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY PS2_RECEIVER IS&#13;
+  PORT (&#13;
+  		CLK: in std_logic;
+  		PS2_CLK: in std_logic;
+  		PS2_DATA: in std_logic;
+  		DATA_VALID: out std_logic;
+  		DATA_RECEIVED: out std_logic_vector(7 downto 0)
+       );&#13;
+END PS2_RECEIVER;&#13;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+&#13;
+ARCHITECTURE comportamentala OF PS2_RECEIVER IS&#13;
+&#13;signal SHIFT_REGISTER: std_logic_vector (7 downto 0);
+signal SHIFT_COUNT: integer range 0 to 11;
+signal START_BIT_DETECTED: std_logic := '0';
+BEGIN&#13;
+
+	--- Numaram bitii care intra, trebuie sa intre 8 biti
+	--- Detectam bitul de start si validam in functie de data_valid
+&#13;	process(CLK)
+	begin
+		if(falling_edge(CLK)) then
+			if PS2_CLK = '0' and PS2_CLK' event then
+				if SHIFT_COUNT = 0 then
+					if PS2_DATA = '0' then
+						START_BIT_DETECTED &lt;= '1';
+						SHIFT_COUNT &lt;= 1;
+					end if;
+				else
+					SHIFT_REGISTER &lt;= SHIFT_REGISTER(6 downto 0) &amp; ps2_data;
+					SHIFT_COUNT &lt;= SHIFT_COUNT + 1;
+					if SHIFT_COUNT = 9 then
+						DATA_RECEIVED &lt;= SHIFT_REGISTER;
+						DATA_VALID &lt;= '1';
+						SHIFT_COUNT &lt;= 0;
+					end if;
+				end if;
+			else
+				START_BIT_DETECTED &lt;= '0';
+			end if;
+		end if;	
+&#13;	end process;
+
+	---Daca avem bit de start, atunci data_valid e 0 ceea ce inseamna ca nu bagam datele in received_data
+	process(START_BIT_DETECTED)
+	begin
+		if START_BIT_DETECTED = '1' then
+			DATA_VALID &lt;= '0';
+		end if;
+	end process;
+END comportamentala;&#13;
+</vhdl>
+  <vhdl name="KEYBOARD_DECODER">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY KEYBOARD_DECODER IS&#13;
+  PORT (&#13;
+  		DATA_RECEIVED: in std_logic_vector (7 downto 0);
+  		KEY1: out std_logic_vector(4 downto 0);
+  		KEY2: out std_logic_vector(4 downto 0);
+  		KEY3: out std_logic_vector(4 downto 0);
+  		KEY4: out std_logic_vector(4 downto 0)
+       );&#13;
+END KEYBOARD_DECODER;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE comportamentala OF KEYBOARD_DECODER IS&#13;
+signal temp1: std_logic_vector(4 downto 0);
+signal temp2: std_logic_vector(4 downto 0);
+signal temp3: std_logic_vector(4 downto 0);
+signal temp4: std_logic_vector(4 downto 0);
+BEGIN&#13;
+	---proces pentru salvarea literelor sub forma de numere pe 5 biti 
+	process(DATA_RECEIVED)
+	begin
+		temp4&lt;=temp3;
+		temp3&lt;=temp2;
+		temp2&lt;=temp1;
+		case (DATA_RECEIVED) is
+			when "00011100" =&gt; temp1 &lt;= "00001"; ---A;
+			when "00110010" =&gt; temp1 &lt;= "00010"; ---B;
+			when "00100001" =&gt; temp1 &lt;= "00011"; ---C;
+			when "00100011" =&gt; temp1 &lt;= "00100"; ---D;
+			when "00100100" =&gt; temp1 &lt;= "00101"; ---E;
+			when "00101011" =&gt; temp1 &lt;= "00110"; ---F;
+			when "00110100" =&gt; temp1 &lt;= "00111"; ---G;
+			when "00110011" =&gt; temp1 &lt;= "01000"; ---H;
+			when "01000011" =&gt; temp1 &lt;= "01001"; ---I;
+			when "00111011" =&gt; temp1 &lt;= "01010"; ---J;
+			when "01000010" =&gt; temp1 &lt;= "01011"; ---K;
+			when "01001011" =&gt; temp1 &lt;= "01100"; ---L;
+			when "00111010" =&gt; temp1 &lt;= "01101"; ---M;
+			when "00110001" =&gt; temp1 &lt;= "01110"; ---N;
+			when "01000100" =&gt; temp1 &lt;= "01111"; ---O;
+			when "01001101" =&gt; temp1 &lt;= "10000"; ---P;
+			when "00010101" =&gt; temp1 &lt;= "10001"; ---Q;
+			when "00101101" =&gt; temp1 &lt;= "10010"; ---R;
+			when "00011011" =&gt; temp1 &lt;= "10011"; ---S;
+			when "00101100" =&gt; temp1 &lt;= "10100"; ---T;
+			when "00111100" =&gt; temp1 &lt;= "10101"; ---U;
+			when "00101010" =&gt; temp1 &lt;= "10110"; ---V;
+			when "00011101" =&gt; temp1 &lt;= "10111"; ---W;
+			when "00100010" =&gt; temp1 &lt;= "11000"; ---X;
+			when "00110101" =&gt; temp1 &lt;= "11001"; ---Y;
+			when "00011010" =&gt; temp1 &lt;= "11010"; ---Z;
+			when others =&gt; temp1 &lt;= "00000";
+			
+		end case;
+	end process;
+KEY1&lt;=temp1;
+KEY2&lt;=temp2;
+KEY3&lt;=temp3;
+KEY4&lt;=temp4;
+		
+&#13;
+END comportamentala;&#13;
+</vhdl>
+  <vhdl name="COUTER_FOR_DELAY">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY COUTER_FOR_DELAY IS
+  PORT (
+  		CLK: in std_logic;
+  		COUNT: out std_logic_vector (16 downto 0)
+    );
+END COUTER_FOR_DELAY;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF COUTER_FOR_DELAY IS
+
+signal temp: std_logic_vector (16 downto 0);
+BEGIN
+process(CLK)
+	begin 
+		if (rising_edge(CLK)) then 
+			if temp &lt; "11111111111111111" then temp &lt;= temp + "00000000000000001";
+			else temp &lt;= "00000000000000000";
+			end if;
+		end if;
+end process;
+
+COUNT &lt;= temp;
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="TO_7_SEGMENT">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY TO_7_SEGMENT IS&#13;
+  PORT (&#13;
+  		CLK: in std_logic;
+  		LETTER: in std_logic_vector(4 downto 0);
+  		SEGMENT1: out std_logic_vector (7 downto 0)
+       );&#13;
+END TO_7_SEGMENT;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE comportamentala OF TO_7_SEGMENT IS&#13;
+signal temp1: std_logic_vector(7 downto 0);
+BEGIN&#13;
+&#13;	process(CLK)
+	begin
+		if(rising_edge(CLK)) then
+			case LETTER is
+				when "00001" =&gt; temp1 &lt;="0001000";---A
+				when "00010" =&gt; temp1 &lt;="1111111";---B
+				when "00011" =&gt; temp1 &lt;="0110001";---C
+				when "00100" =&gt; temp1 &lt;="0000001";---D
+				when "00101" =&gt; temp1 &lt;="0110000";---E
+				when "00110" =&gt; temp1 &lt;="0111000";---F
+				when "00111" =&gt; temp1 &lt;="0100000";---G
+				when "01000" =&gt; temp1 &lt;="1001000";---H
+				when "01001" =&gt; temp1 &lt;="1001111";---I
+				when "01010" =&gt; temp1 &lt;="0000011";---J
+				when "01011" =&gt; temp1 &lt;="1001000";---K
+				when "01100" =&gt; temp1 &lt;="1110000";---L
+				when "01101" =&gt; temp1 &lt;="0001001";---M
+				when "01110" =&gt; temp1 &lt;="1101010";---N
+				when "01111" =&gt; temp1 &lt;="0000001";---O
+				when "10000" =&gt; temp1 &lt;="0011000";---P
+				when "10001" =&gt; temp1 &lt;="0000001";---Q
+				when "10010" =&gt; temp1 &lt;="0001000";---R
+				when "10011" =&gt; temp1 &lt;="0100100";---S
+				when "10100" =&gt; temp1 &lt;="0111001";---T
+				when "10101" =&gt; temp1 &lt;="1000001";---U
+				when "10110" =&gt; temp1 &lt;="1000001";---V
+				when "10111" =&gt; temp1 &lt;="1000001";---W
+				when "11000" =&gt; temp1 &lt;="1001000";---X
+				when "11001" =&gt; temp1 &lt;="1001100";---Y
+				when "11010" =&gt; temp1 &lt;="0010010";---Z
+				when others =&gt; temp1 &lt;="1111111";
+			end case;
+		end if;
+	end process;
+SEGMENT1 &lt;=temp1;
+END comportamentala;&#13;
+</vhdl>
+  <vhdl name="MUX_4_TO_1">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY MUX_4_TO_1 IS
+  PORT (
+  sel0: in std_logic;
+  sel1: in std_logic;
+
+  digit0: in std_logic_vector (4 downto 0);
+  digit1: in std_logic_vector (4 downto 0);
+  digit2: in std_logic_vector (4 downto 0);
+  digit3: in std_logic_vector (4 downto 0);
+
+  outputDigit: out std_logic_vector (4 downto 0)
+    );
+END MUX_4_TO_1;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF mux_4_to_1 IS
+
+BEGIN
+
+outputDigit &lt;= digit0 when (sel0 = '0' and sel1 = '0') else 
+			digit1 when (sel0 = '0' and sel1 = '1') else 
+			digit2 when (sel0 = '1' and sel1 = '0') else 
+			digit3 when (sel0 = '1' and sel1 = '1') else 
+			"00000";
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="SPLITER">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY SPLITER IS&#13;
+  PORT (&#13;
+ 		vector: in std_logic_vector(16 downto 0);
+ 		select0 : out std_logic;
+ 		select1 : out std_logic
+       );&#13;
+END SPLITER;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF SPLITER IS&#13;
+&#13;
+BEGIN&#13;
+&#13;	select0 &lt;= vector(15);
+	select1 &lt;= vector(16);
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="RING_REGISTER">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY RING_REGISTER IS&#13;
+  PORT (&#13;
+  		CLK: in std_logic;
+  		ANOZI: out std_logic_vector(3 downto 0);
+  		TO_CODE: out std_logic_vector(3 downto 0)
+       );&#13;
+END RING_REGISTER;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF RING_REGISTER IS&#13;
+&#13;signal temp: std_logic_vector(3 downto 0):="0001";
+BEGIN&#13;
+&#13;	process(CLK)
+	begin
+		if(rising_edge(CLK)) then
+			temp(3)&lt;=temp(2);
+			temp(2)&lt;=temp(1);
+			temp(1)&lt;=temp(0);
+			temp(0)&lt;=temp(3);
+		end if;
+	end process;
+&#13;ANOZi &lt;=temp;
+TO_CODE &lt;=temp;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="ENCODER">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY ENCODER IS&#13;
+  PORT (&#13;
+ 		DATA: in std_logic_vector(3 downto 0);
+ 		SELECT0: out std_logic;
+ 		SELECT1: out std_logic
+       );&#13;
+END ENCODER;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF ENCODER IS&#13;
+&#13;signal temp: std_logic_vector(1 downto 0);
+BEGIN&#13;
+	process
+	begin
+&#13;	case DATA is
+		when "0001" =&gt;
+			SELECT0 &lt;='0';
+			SELECT1 &lt;='0';
+		when "0010" =&gt; 
+			SELECT0 &lt;='1';
+			SELECT1 &lt;='0';
+		when "0100" =&gt;
+			SELECT0 &lt;='0';
+			SELECT1 &lt;='1';
+		when "1000" =&gt;
+			SELECT0&lt;='1';
+			SELECT1&lt;='1';
+		when others =&gt;
+			SELECT0&lt;='0';
+			SELECT1&lt;='0';
+	end case;
+	end process;
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="DEVIDER">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY DEVIDER IS
+  PORT (
+  		CLK: in std_logic;
+  		CLK_D: out std_logic
+    );
+END DEVIDER;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF DEVIDER IS
+
+signal temp: std_logic_vector (16 downto 0);
+BEGIN
+process(CLK)
+	begin 
+		if (rising_edge(CLK)) then 
+			temp &lt;= temp+1;
+			CLK_D &lt;= temp(16);
+			
+		end if;
+end process; 
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="SSDISPLAY">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY SSDISPLAY IS&#13;
+  PORT (&#13;
+  		LETTER: in std_logic_vector (4 downto 0);
+  		catozi: out std_logic_vector(6 downto 0)
+       );&#13;
+END SSDISPLAY;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF SSDISPLAY IS&#13;
+&#13;signal temp: std_logic_vector(6 downto 0);
+BEGIN&#13;
+&#13;	process
+	begin
+		case (LETTER) is
+				when "00001" =&gt; temp &lt;="0001000";---A
+				when "00010" =&gt; temp &lt;="1111111";---B
+				when "00011" =&gt; temp &lt;="0110001";---C
+				when "00100" =&gt; temp &lt;="0000001";---D
+				when "00101" =&gt; temp &lt;="0110000";---E
+				when "00110" =&gt; temp &lt;="0111000";---F
+				when "00111" =&gt; temp &lt;="0100000";---G
+				when "01000" =&gt; temp &lt;="1001000";---H
+				when "01001" =&gt; temp &lt;="1001111";---I
+				when "01010" =&gt; temp &lt;="0000011";---J
+				when "01011" =&gt; temp &lt;="1001000";---K
+				when "01100" =&gt; temp &lt;="1110000";---L
+				when "01101" =&gt; temp &lt;="0001001";---M
+				when "01110" =&gt; temp &lt;="1101010";---N
+				when "01111" =&gt; temp &lt;="0000001";---O
+				when "10000" =&gt; temp &lt;="0011000";---P
+				when "10001" =&gt; temp &lt;="0000001";---Q
+				when "10010" =&gt; temp &lt;="0001000";---R
+				when "10011" =&gt; temp &lt;="0100100";---S
+				when "10100" =&gt; temp &lt;="0111001";---T
+				when "10101" =&gt; temp &lt;="1000001";---U
+				when "10110" =&gt; temp &lt;="1000001";---V
+				when "10111" =&gt; temp &lt;="1000001";---W
+				when "11000" =&gt; temp &lt;="1001000";---X
+				when "11001" =&gt; temp &lt;="1001100";---Y
+				when "11010" =&gt; temp &lt;="0010010";---Z
+				when others =&gt; temp &lt;="1111111";
+			end case;
+	end process;
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+</project>
